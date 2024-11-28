@@ -1,39 +1,40 @@
 $main-green: #70F193;
 
-
-
 .saga-green {
-    .MuiBox-root css-zxdg2z {
-        background-color: #fff !important;
+    .MuiBox-root {
+        background-color: #FBFAFC !important;
     }
 
+    //// DASHBOARD STYLES Start ////
     .custom-tabs-menu {
-        border: 1px solid #ececec !important;
+        border: 1px solid #ececec;
         border-radius: 16px;
         box-shadow: rgba(99, 99, 99, 0.1) 0px 1px 1px 0px;
+
         .tab-menu {
-            padding: 12px !important;
-            color: #000000 !important;
+            padding: 12px;
+            color: #000000;
             transition: .2s ease-in-out;
 
             &:hover {
-                color: $main-green !important;
+                color: $main-green;
             }
         }
 
         .active {
-            background-color: $main-green !important;
-            color: #000000 !important;
-            padding: 12px !important;
+            background-color: $main-green;
+            color: #000000;
+            padding: 12px;
             border-radius: 20px;
 
             &:hover {
-                color: #000000 !important;
+                color: #000000;
             }
         }
     }
-
-    .recent-gym-item{
-        border-bottom: 1px solid #ececec !important;
+    .recent-gym-item {
+        border-bottom: 1px solid #ececec;
     }
+    //// DASHBOARD STYLES End ////
+
 }

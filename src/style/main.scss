@@ -1,0 +1,28 @@
+$main-green: #70F193;
+
+
+////// DASHBOARD STYLES Start //////
+.green-card {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url('../assets/images/Woman.png');
+        top: -10%;
+        background-repeat: no-repeat;
+        height: 110%;
+        width: 40%;
+        background-size: cover;
+        right: 0%;
+
+    }
+}
+
+.recent-gym-item:last-child {
+    border-bottom: none !important;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+////// DASHBOARD STYLES End ////

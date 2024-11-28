@@ -1,15 +1,13 @@
 import React from "react";
-import SidebarWrapper from "../../../layout/dashboard-layout/SidebarWrapper";
-import Heading from "../../../common/ui/Heading";
-import dashboardMainImage from "../../../assets/images/dashboard-main.png";
-import walletIcon from "../../../assets/icons/wallet-icon.png";
-import userIcon from "../../../assets/icons/user-icon.png";
-import gymIcon from "../../../assets/icons/gym-icon.png";
+import SidebarWrapper from "@/layout/dashboard-layout/SidebarWrapper";
+import Heading from "@/common/ui/Heading";
+import walletIcon from "@/assets/icons/wallet-icon.png";
+import userIcon from "@/assets/icons/user-icon.png";
+import gymIcon from "@/assets/icons/gym-icon.png";
 import StatCard from "./components/StatCard";
-import womanImage from "../../../assets/images/Woman.png";
 import PromoCard from "./components/PromoCard";
-import BasicDemo from "./components/TabMenu";
 import RecentGym from "./components/RecentGym";
+import CustomTabMenu from "./components/CustomTabMenu";
 
 function DashboardHome() {
   return (
@@ -19,7 +17,7 @@ function DashboardHome() {
           <Heading title="Dashboard" subTitle="Default Dashboard" />
         </div>
         <div className="col-md-3">
-          <BasicDemo />
+          <CustomTabMenu />
         </div>
       </div>
       <div className="row">

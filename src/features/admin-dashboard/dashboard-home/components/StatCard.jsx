@@ -1,5 +1,5 @@
 import React from "react";
-import graphIcon from "../../../../assets/icons/graph-icon.png";
+import graphIcon from "@/assets/icons/graph-icon.png";
 
 function StatCard({ icon, title="Gym" }) {
   return (

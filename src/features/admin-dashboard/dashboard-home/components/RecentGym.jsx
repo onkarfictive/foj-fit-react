@@ -1,8 +1,8 @@
 import React from "react";
-import gymOne from "../../../../assets/images/gym-one.png";
-import gymTwo from "../../../../assets/images/gym-two.png";
-import gymThree from "../../../../assets/images/gym-three.png";
-import gymFour from "../../../../assets/images/gym-four.png";
+import gymOne from "@/assets/images/gym-one.png";
+import gymTwo from "@/assets/images/gym-two.png";
+import gymThree from "@/assets/images/gym-three.png";
+import gymFour from "@/assets/images/gym-four.png";
 import { Location } from "iconsax-react";
 
 function RecentGym() {
