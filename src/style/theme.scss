@@ -1,0 +1,52 @@
+$main-green: #70F193;
+
+
+.bg-shadow{
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.vela-green {
+   .css-fotg20-MuiPaper-root-MuiAppBar-root {
+      background: #222222 !important;
+      border-bottom: 1px solid;
+      border-image: linear-gradient(to left, $main-green, rgba(112, 241, 147, 0.2)) 1;
+   }
+
+   .css-1ygil4i-MuiToolbar-root {
+      background: #222222 !important;
+      border-bottom: 1px solid;
+      border-image: linear-gradient(to bottom, $main-green, rgba(112, 241, 147, 0.2)) 1;
+   }
+
+   .card {
+      background: linear-gradient(180deg, #303030 0%, #242424 100%);
+      background-color: #222222;
+      border-radius: 20px;
+      color: #fff;
+   }
+
+   .custom-tabs-menu {
+      background-color: #222222 !important;
+      border-radius: 16px;
+      .tab-menu {
+         padding: 12px !important;
+         transition: .2s ease-in-out;
+         &:hover {
+            color: $main-green !important;
+         }
+      }
+      .active {
+         background-color: $main-green !important;
+         color: #000000 !important;
+         padding: 12px !important;
+         border-radius: 20px;
+
+         &:hover {
+            color: #000000 !important;
+         }
+      }
+   }
+   .recent-gym-item{
+      border-bottom: 1px solid #484848 !important;
+  }
+}

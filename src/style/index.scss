@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+$main-green: #70F193;
+
+
+////// MATERIAL UI START //////
+/// Material UI - Sidebar
+.css-vw93mm-MuiDrawer-docked .MuiDrawer-paper {
+  border-right: 1px solid;
+  border-image: linear-gradient(to bottom, $main-green, rgba(112, 241, 147, 0.2)) 1;
+}
+
+////// MATERIAL UI END //////
+
+
+///// FIXED CLASSES START /////
+.bg-green {
+  background-color: $main-green !important;
+}
+
+.border-bottom-grey{
+  border-bottom: 1px solid #484848 !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.bg-light-black {
+  background-color: #222222 !important;
+}
+.bg-dark-black {
+  background-color: #000000 !important;
+}
+.text-grey {
+  color: #A4A4A4 !important;
+}
+.card{
+  border-radius: 16px !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fw-500 {
+  font-weight: 600 !important;
+}
+.fw-300 {
+  font-weight: 300 !important;
+}
+
+.border-rounded-5 {
+  border-radius: 5px !important;
+}
+
+.border-rounded-10 {
+  border-radius: 10px !important;
+}
+
+.border-rounded-20 {
+  border-radius: 20px !important;
+}
+.border-rounded-25{
+  border-radius: 25% !important;
+}
+
+.text-main-green {
+  color: $main-green !important;
+}
+
+.fs-14{
+  font-size: 14px !important;
+}
+
+.fs-12{
+  font-size: 14px !important;
+}
+
+///// FIXED CLASSES END /////
+/// 
+.green-card{
+  position: relative;
+  ::before{
+    content: '';
+    position: absolute;
+    background-image: url('../assets/images/Woman.png');
+    top: -10%;
+  background-repeat: no-repeat;
+  height: 110%;
+  width: 40%;
+  background-size: cover;
+  right: 0%;
+
+  }
+}
+
+.recent-gym-item:last-child {
+  border-bottom: none!important;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+
+

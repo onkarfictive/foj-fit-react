@@ -1,0 +1,39 @@
+$main-green: #70F193;
+
+
+
+.saga-green {
+    .MuiBox-root css-zxdg2z {
+        background-color: #fff !important;
+    }
+
+    .custom-tabs-menu {
+        border: 1px solid #ececec !important;
+        border-radius: 16px;
+        box-shadow: rgba(99, 99, 99, 0.1) 0px 1px 1px 0px;
+        .tab-menu {
+            padding: 12px !important;
+            color: #000000 !important;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                color: $main-green !important;
+            }
+        }
+
+        .active {
+            background-color: $main-green !important;
+            color: #000000 !important;
+            padding: 12px !important;
+            border-radius: 20px;
+
+            &:hover {
+                color: #000000 !important;
+            }
+        }
+    }
+
+    .recent-gym-item{
+        border-bottom: 1px solid #ececec !important;
+    }
+}
