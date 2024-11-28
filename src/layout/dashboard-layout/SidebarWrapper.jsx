@@ -17,7 +17,7 @@ function SidebarWrapper({ children }) {
           },
         },
         typography: {
-          fontFamily: "Poppins, sans-serif",
+          fontFamily: "Archivo, sans-serif",
         },
       }),
     [mode]

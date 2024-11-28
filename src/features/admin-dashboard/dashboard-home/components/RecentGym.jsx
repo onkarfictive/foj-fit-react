@@ -30,8 +30,8 @@ function RecentGym() {
   ];
 
   return (
-    <div className="card">
-      <div className="card-body">
+    <div className="card h-100">
+      <div className="card-body h-100">
         <h5 className="mb-4">Recently Added Gym</h5>
         {data.map((item) => (
           <div className="d-flex align-items-center gap-3 my-3 pb-3 recent-gym-item">

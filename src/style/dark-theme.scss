@@ -12,6 +12,14 @@ $main-green: #70F193;
       border-image: linear-gradient(to left, $main-green, rgba(112, 241, 147, 0.2)) 1;
    }
 
+   .main-green-badge{
+      border: 1px solid $main-green;
+      border-radius: 8px;
+      padding: 6px 8px;
+      color: $main-green;
+      background-color: #70f19330;
+    }
+
    .css-1ygil4i-MuiToolbar-root {
       background: #222222 !important;
       border-bottom: 1px solid;
@@ -19,7 +27,7 @@ $main-green: #70F193;
    }
 
    .card {
-      background: linear-gradient(180deg, #303030 0%, #242424 100%);
+      background: linear-gradient(180deg, #303030 0%, #242424 70%);
       background-color: #222222;
       border-radius: 20px;
       color: #fff;
@@ -27,12 +35,11 @@ $main-green: #70F193;
 
    .custom-tabs-menu {
       background-color: #222222;
-      border-radius: 16px;
+      border-radius: 20px;
 
       .tab-menu {
          padding: 12px;
          transition: .2s ease-in-out;
-
          &:hover {
             color: $main-green;
          }
@@ -51,10 +58,18 @@ $main-green: #70F193;
    }
 
    .custom-tabs-menu.dark {
-      background-color: #000000!important;
+      background-color: #1f1f1f!important;
+      .tab-menu {
+         padding: 10px 14px!important;
+         transition: .2s ease-in-out;
+      }
    }
 
    .recent-gym-item {
       border-bottom: 1px solid #484848;
+   }
+
+   .subs-card{
+      background-color: #262626;
    }
 }

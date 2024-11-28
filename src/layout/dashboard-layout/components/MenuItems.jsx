@@ -108,7 +108,7 @@ const MenuItems = ({ open }) => {
       backgroundColor: "#2A372E",
       color: "#70F193",
     },
-    fontFamily: "Poppins, sans-serif",
+    fontFamily: "Archivo, sans-serif",
     borderRadius: "12px",
   };
 
@@ -121,7 +121,7 @@ const MenuItems = ({ open }) => {
     "&:hover": {
       color: "#70F193",
     },
-    fontFamily: "Poppins, sans-serif",
+    fontFamily: "Archivo, sans-serif",
   };
 
   return (

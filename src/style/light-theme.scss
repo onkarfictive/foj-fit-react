@@ -4,6 +4,14 @@ $main-green: #70F193;
     .MuiBox-root {
         background-color: #FBFAFC !important;
     }
+    .main-green-badge{
+        border: 1px solid $main-green;
+        border-radius: 8px;
+        padding: 6px 8px;
+        color: $main-green;
+        font-weight: 600;
+        background-color: #70f19317;
+      }
 
     //// DASHBOARD STYLES Start ////
     .custom-tabs-menu {
@@ -31,10 +39,14 @@ $main-green: #70F193;
                 color: #000000;
             }
         }
+       
     }
     .recent-gym-item {
         border-bottom: 1px solid #ececec;
     }
-    //// DASHBOARD STYLES End ////
 
+    .subs-card{
+        background-color: #fafcfa;
+     }
+    //// DASHBOARD STYLES End ////
 }
