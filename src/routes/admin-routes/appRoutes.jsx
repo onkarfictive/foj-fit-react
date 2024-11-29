@@ -1,21 +1,29 @@
-import DashboardHome from "../../features/admin-dashboard/dashboard-home/DashboardHome";
-import Sidebar from "../../layout/dashboard-layout/components/Sidebar";
-import SidebarWrapper from "../../layout/dashboard-layout/SidebarWrapper";
+import DashboardHomePage from "@/pages/admin-pages/DashboardHomePage";
+import GymManagementPage from "../../pages/admin-pages/GymManagementPage";
+import GymDetailPage from "../../pages/admin-pages/GymDetailPage";
+
 
 const routes = [
   {
     path: "/",
-    element:  <DashboardHome />,
+    element: <DashboardHomePage />,
     exact: true,
   },
   {
-    path: "/dashboard",
-    element: <DashboardHome  />,
+    path: "admin/dashboard",
+    element: <DashboardHomePage />,
     exact: true,
   },
+
   {
-    path: "/meals",
-    element: <SidebarWrapper />,
+    path: "admin/gym-management",
+    element: <GymManagementPage />,
+    exact: true,
+  },
+
+  {
+    path: "admin/gym-management/gym-detail/:id",
+    element: <GymDetailPage />,
     exact: true,
   },
 ];

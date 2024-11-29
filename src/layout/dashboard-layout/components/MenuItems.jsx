@@ -31,13 +31,13 @@ const MenuItems = ({ open }) => {
     {
       title: "Dashboard",
       icon: <HomeHashtag size="20" variant="Bulk" />,
-      path: "/dashboard",
+      path: "/admin/dashboard",
       allow: true,
     },
     {
       title: "Gym Management",
       icon: <AlignHorizontally size="20" variant="Bulk" />,
-      path: "/meals",
+      path: "/admin/gym-management",
     },
     {
       title: "Revenue",

@@ -47,3 +47,22 @@ $main-green: #70f193;
 }
 
 ////// DASHBOARD STYLES End ////
+
+  //////GYM MANAGEMENT START//////
+  
+  .admin-gym-management{
+    .gym-card{
+      .expiry-badge{
+         p{
+            color : $main-green;
+            padding:  6px 0;
+            border: 1px dotted $main-green;
+            border-radius: 8px;
+            font-size: 14px;
+            background-color: #70f19314;
+         }
+      }
+    }
+  }
+
+  

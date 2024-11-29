@@ -21,7 +21,6 @@ function DashboardHome() {
   const [date, setDate] = useState(null);
   return (
     <div className="dashboard-home">
-      <SidebarWrapper>
         <div className="row">
           <div className="col-md-9">
             <Heading title="Dashboard" subTitle="Default Dashboard" />
@@ -127,7 +126,6 @@ function DashboardHome() {
             </div>
           </div>
         </div>
-      </SidebarWrapper>
     </div>
   );
 }

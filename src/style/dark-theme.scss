@@ -1,75 +1,96 @@
-$main-green: #70F193;
-
+$main-green: #70f193;
 
 .bg-shadow {
-   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .vela-green {
-   .css-fotg20-MuiPaper-root-MuiAppBar-root {
-      background: #222222 !important;
-      border-bottom: 1px solid;
-      border-image: linear-gradient(to left, $main-green, rgba(112, 241, 147, 0.2)) 1;
-   }
+  .css-fotg20-MuiPaper-root-MuiAppBar-root {
+    background: #222222 !important;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(
+        to left,
+        $main-green,
+        rgba(112, 241, 147, 0.2)
+      )
+      1;
+  }
+  a{
+    color: #fff !important;
+    transition: .2s ease-in-out;
+    text-decoration: none;
+    &:hover{
+      color: $main-green !important;
+    }
+  }
 
-   .main-green-badge{
-      border: 1px solid $main-green;
-      border-radius: 8px;
-      padding: 6px 8px;
-      color: $main-green;
-      background-color: #70f19330;
+  .main-green-badge {
+    border: 1px solid $main-green;
+    border-radius: 8px;
+    padding: 6px 8px;
+    color: $main-green;
+    background-color: #70f19330;
+  }
+
+  .css-1ygil4i-MuiToolbar-root {
+    background: #222222 !important;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(
+        to bottom,
+        $main-green,
+        rgba(112, 241, 147, 0.2)
+      )
+      1;
+  }
+
+  .card {
+    background: linear-gradient(180deg, #303030 0%, #242424 70%);
+    background-color: #222222;
+    border-radius: 20px;
+    color: #fff;
+  }
+
+  .custom-tabs-menu {
+    background-color: #222222;
+    border-radius: 20px;
+
+    .tab-menu {
+      padding: 12px;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        color: $main-green;
+      }
     }
 
-   .css-1ygil4i-MuiToolbar-root {
-      background: #222222 !important;
-      border-bottom: 1px solid;
-      border-image: linear-gradient(to bottom, $main-green, rgba(112, 241, 147, 0.2)) 1;
-   }
-
-   .card {
-      background: linear-gradient(180deg, #303030 0%, #242424 70%);
-      background-color: #222222;
-      border-radius: 20px;
-      color: #fff;
-   }
-
-   .custom-tabs-menu {
-      background-color: #222222;
+    .active {
+      background-color: $main-green;
+      color: #000000;
+      padding: 12px;
       border-radius: 20px;
 
-      .tab-menu {
-         padding: 12px;
-         transition: .2s ease-in-out;
-         &:hover {
-            color: $main-green;
-         }
+      &:hover {
+        color: #000000;
       }
+    }
+  }
 
-      .active {
-         background-color: $main-green;
-         color: #000000;
-         padding: 12px;
-         border-radius: 20px;
+  .custom-tabs-menu.dark {
+    background-color: #1f1f1f !important;
+    .tab-menu {
+      padding: 10px 14px !important;
+      transition: 0.2s ease-in-out;
+    }
+  }
 
-         &:hover {
-            color: #000000;
-         }
-      }
-   }
+  .recent-gym-item {
+    border-bottom: 1px solid #484848;
+  }
 
-   .custom-tabs-menu.dark {
-      background-color: #1f1f1f!important;
-      .tab-menu {
-         padding: 10px 14px!important;
-         transition: .2s ease-in-out;
-      }
-   }
+  .subs-card {
+    background-color: #262626;
+  }
 
-   .recent-gym-item {
-      border-bottom: 1px solid #484848;
-   }
 
-   .subs-card{
-      background-color: #262626;
-   }
+
+
 }

@@ -4,6 +4,14 @@ $main-green: #70F193;
     .MuiBox-root {
         background-color: #FBFAFC !important;
     }
+    a{
+        color: #222222 !important;
+        transition: .2s ease-in-out;
+        text-decoration: none;
+        &:hover{
+          color: $main-green !important;
+        }
+      }
     .main-green-badge{
         border: 1px solid $main-green;
         border-radius: 8px;
