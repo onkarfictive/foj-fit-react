@@ -99,6 +99,43 @@ ol, ul{
 }
 
 
+.success-tag{
+  color: #1EB564;
+  background: #3C5643;
+  padding: 3px 8px  3px 14px;
+  border-radius: 10px;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #1EB564;
+    left: 5px;
+    border-radius: 50%;
+    top: 9px;
+  }
+}
+
+.danger-tag{
+  color: #FF5656;
+  background: #5B4545;
+  padding: 3px 8px  3px 14px;
+  border-radius: 10px;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #FF5656;
+    left: 5px;
+    border-radius: 50%;
+    top: 9px;
+  }
+}
+
+
 
 ///// FIXED CLASSES END /////
 /// 

@@ -13,6 +13,8 @@ import "@fontsource/poppins/400.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "@fontsource/poppins/600.css";
 import "./style/main.scss";
+import 'primeicons/primeicons.css';
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

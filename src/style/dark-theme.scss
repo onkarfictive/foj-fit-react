@@ -1,4 +1,6 @@
 $main-green: #70f193;
+$card-background: linear-gradient(180deg, #303030 0%, #242424 70%);
+
 
 .bg-shadow {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -90,7 +92,38 @@ $main-green: #70f193;
     background-color: #262626;
   }
 
+  .p-datatable {
+    background: $card-background;
+    border-radius: 20px;
+    color: #fff;
+
+    .p-datatable-tbody > tr > td,
+    .p-datatable-tfoot > tr > td {
+      background: #303030;
+      color: #a4a4a4;
+    }
+
+    .p-datatable-thead > tr > th{
+      background: #3C5643;
+      color: $main-green;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    .p-paginator-bottom{
+      background: $card-background;
+    }
 
 
+  }
 
+  .p-inputtext, .p-dropdown-trigger, .p-inputwrapper, .p-dropdown-items-wrapper {
+    background: transparent!important;
+  }
+
+  .p-dialog-header ,.p-dialog-content{
+    background: $card-background;
+  }
 }
+
+
