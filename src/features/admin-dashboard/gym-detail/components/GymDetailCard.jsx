@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Dialog } from "primereact/dialog";
 import gymLogo from "@/assets/images/gym-one.png";
+import GymDetailModal from "./GymDetailModal";
 
 function GymDetailCard() {
   const [showModal, setShowModal] = useState(false);
@@ -12,6 +13,7 @@ function GymDetailCard() {
   return (
     <div className="card">
       <div className="card-body">
+        {/* Header Section */}
         <div className="d-flex align-items-center justify-content-between mb-3">
           <div className="d-flex align-items-center gap-3">
             <img
@@ -26,6 +28,7 @@ function GymDetailCard() {
           <p className="main-green-badge fs-14 m-0">ID : 12345</p>
         </div>
 
+        {/* Gym Info */}
         <div className="row">
           <div className="col-sm-6">
             <p>
@@ -106,6 +109,7 @@ function GymDetailCard() {
           </div>
         </div>
 
+      
         <div className="mt-3">
           <p
             className="text-success"
@@ -116,18 +120,20 @@ function GymDetailCard() {
           </p>
         </div>
 
-        
+  
         <Dialog
-          header={null}                    
+          
           visible={showModal}
           style={{ width: "50vw" }}
           onHide={toggleModal}
         >
-          
+          <GymDetailModal/>
         </Dialog>
       </div>
     </div>
   );
 }
+
+
 
 export default GymDetailCard;
