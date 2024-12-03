@@ -2,7 +2,8 @@ import React from "react";
 import { SelectButton } from "primereact/selectbutton";
 
 const options = ["Off", "On"];
-const [value, setValue] = useState(options[0]);
+// const [value, setValue] = useState(options[0]);
+let value  = "0"
 
 const GymDetailModal = () => {
   return (
