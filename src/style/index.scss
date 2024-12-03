@@ -1,25 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
 
-$main-green: #70F193;
+$main-green-dark: #60c480; // Darker green for light mode
+$main-green-light: #70F193; // Lighter green for dark mode
 
+body.saga-green { // For light mode
+  --main-green: #60c480;
+}
 
-////// MATERIAL UI START //////
-/// Material UI - Sidebar
-.css-vw93mm-MuiDrawer-docked .MuiDrawer-paper {
+body.vela-green { // For dark mode
+  --main-green: #70F193;
+}
+
+.css-vw93mm-MuiDrawer-docked .MuiDrawer-paper ,.css-1ygil4i-MuiToolbar-root {
   border-right: 1px solid;
-  border-image: linear-gradient(to bottom, $main-green, rgba(112, 241, 147, 0.2)) 1;
+  border-image: linear-gradient(to bottom, var(--main-green), rgba(112, 241, 147, 0.2)) 1;
 } 
 
-////// MATERIAL UI END //////
+.css-1d3kiei-MuiPaper-root-MuiAppBar-root{
+  z-index: 1 !important;
+}
 
 
-///// FIXED CLASSES START /////
-/// 
+.css-fotg20-MuiPaper-root-MuiAppBar-root {
+  background: #222222 !important;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(
+      to left,
+      var(--main-green),
+      rgba(112, 241, 147, 0.2)
+    )
+    1;
+}
+.css-z1e2h7-MuiPaper-root-MuiAppBar-root{
+  border-bottom: 1px solid!important;
+  border-image: linear-gradient(
+      to left,
+      var(--main-green),
+      rgba(112, 241, 147, 0.2)
+    )
+    1;
+}
+
 ol, ul{
   padding: 0!important;
 }
 .bg-green {
-  background-color: $main-green !important;
+  background-color: var(--main-green) !important;
 }
 
 .border-bottom-grey{
@@ -30,14 +56,14 @@ ol, ul{
   cursor: pointer !important;
 }
 .btn-green {
-  background-color: $main-green !important;
-  border-color: $main-green !important;
+  background-color: var(--main-green) !important;
+  border-color: var(--main-green) !important;
   color: #000000 !important;
   transition: .2s ease-in-out;
   &:hover {
     background-color: black !important;
-    border-color: $main-green !important;
-    color: $main-green !important;
+    border-color: var(--main-green) !important;
+    color: var(--main-green) !important;
   }
 }
 
@@ -83,7 +109,7 @@ ol, ul{
   border-radius: 50% !important;
 }
 .text-main-green {
-  color: $main-green !important;
+  color: var(--main-green) !important;
 }
 
 .fs-14{
@@ -137,8 +163,6 @@ ol, ul{
 
 
 
-///// FIXED CLASSES END /////
-/// 
 
 
 

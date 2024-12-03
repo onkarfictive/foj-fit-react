@@ -9,8 +9,10 @@ import MuiDrawer from "@mui/material/Drawer";
 import DrawerHeader from "./DrawerHeader"; // Extracted
 import TopAppBar from "./TopAppBar";
 import MenuItems from "./MenuItems";
-import { Typography } from "@mui/material";
 import logo from "../../../assets/images/fojfit-logo.png";
+import { HambergerMenu } from "iconsax-react";
+import { motion } from "framer-motion"; // Import Framer Motion
+
 
 const drawerWidth = 240;
 
@@ -59,16 +61,12 @@ const Drawer = styled(MuiDrawer, {
     },
   }),
 }));
-export default function Sidebar({ mode, toggleTheme , children }) {
+export default function Sidebar({ mode, toggleTheme, children }) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(
     () => JSON.parse(localStorage?.getItem("sidebarOpen")) ?? true
   );
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
-
-  const handleDrawerOpen = () => {
+  const handleDrawerToggle = () => {
     setOpen(!open);
   };
 
@@ -81,19 +79,24 @@ export default function Sidebar({ mode, toggleTheme , children }) {
       <CssBaseline />
       <TopAppBar
         open={open}
-        handleDrawerOpen={handleDrawerOpen}
+        handleDrawerOpen={handleDrawerToggle}
         mode={mode}
         toggleTheme={toggleTheme}
       />
       <Drawer variant="permanent" open={open}>
         <DrawerHeader>
           <div className="d-flex justify-content-between align-items-center w-100">
-            <div>
-              <img src={logo} alt="Logo" className="" style={{height: "24px"}} />
+            <div hidden={!open}>
+              <img
+                src={logo}
+                alt="Logo"
+                className=""
+                style={{ height: "24px" }}
+              />
             </div>
             <div>
-              <IconButton onClick={handleDrawerClose}>
-                <ChevronLeftIcon />
+              <IconButton onClick={handleDrawerToggle}>
+                <HambergerMenu size="32" variant="Bulk" className="text-white" />
               </IconButton>
             </div>
           </div>

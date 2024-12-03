@@ -1,4 +1,14 @@
-$main-green: #70f193;
+
+$main-green-dark: #60c480; // Darker green for light mode
+$main-green-light: #70F193; // Lighter green for dark mode
+
+body.saga-green { // For light mode
+  --main-green: #60c480;
+}
+
+body.vela-green { // For dark mode
+  --main-green: #70F193;
+}
 
 ////// DASHBOARD STYLES Start //////
 .dashboard-home {
@@ -40,7 +50,7 @@ $main-green: #70f193;
     border-bottom-right-radius: 10px;
   }
   .subs-card{
-    border: 1px solid $main-green;
+    border: 1px solid var(--main-green);
     border-radius: 20px;
     border-bottom: none;
   }
@@ -54,9 +64,9 @@ $main-green: #70f193;
     .gym-card{
       .expiry-badge{
          p{
-            color : $main-green;
+            color : var(--main-green);
             padding:  6px 0;
-            border: 1px dotted $main-green;
+            border: 1px dotted var(--main-green);
             border-radius: 8px;
             font-size: 14px;
             background-color: #70f19314;

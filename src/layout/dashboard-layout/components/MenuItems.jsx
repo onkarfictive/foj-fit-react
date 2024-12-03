@@ -137,9 +137,18 @@ const MenuItems = ({ open }) => {
                 onClick={() =>
                   item.submenus ? handleToggleSubmenu(index) : null
                 }
-                sx={
-                  isActive(item.path) || categoryOpen[index] ? activeStyles : {}
-                }
+                sx={{
+                  ...(isActive(item.path) || categoryOpen[index]
+                    ? activeStyles
+                    : {
+                        color: "white", // White text when inactive
+                        "& .MuiListItemIcon-root": {
+                          color: "white", // White icon when inactive
+                        },
+                        fontFamily: "Archivo, sans-serif",
+                        borderRadius: "12px",
+                      }),
+                }}
               >
                 <ListItemIcon
                   sx={{

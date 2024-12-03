@@ -1,11 +1,12 @@
 import { createTheme, ThemeProvider } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Sidebar from "./components/Sidebar";
+import { toggleTheme } from "../../redux/themeSlice";
 
 function SidebarWrapper({ children }) {
-  const [mode, setMode] = useState(
-    () => localStorage.getItem("theme") || "dark"
-  );
+  const dispatch = useDispatch();
+  const mode = useSelector((state) => state.theme.mode);
 
   const theme = React.useMemo(
     () =>
@@ -24,22 +25,18 @@ function SidebarWrapper({ children }) {
   );
 
   useEffect(() => {
-    localStorage.setItem("theme", mode);
     const themeClass = mode === "dark" ? "vela-green" : "saga-green";
     document.body.classList.remove("vela-green", "saga-green", "light", "dark");
     document.body.classList.add(themeClass);
     if (mode === "dark") {
       document.body.classList.add("dark");
     }
-    localStorage.setItem("theme", mode);
     const themeLink = document.getElementById("theme-link");
     themeLink.href = `https://cdn.jsdelivr.net/npm/primereact/resources/themes/${themeClass}/theme.css`;
   }, [mode]);
 
-  console.log("Mode on Wrapper", mode);
-
-  const toggleTheme = () => {
-    setMode((prevMode) => (prevMode === "dark" ? "light" : "dark"));
+  const toggleThemeHandler = () => {
+    dispatch(toggleTheme());
   };
 
   return (
@@ -49,7 +46,7 @@ function SidebarWrapper({ children }) {
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/primereact/resources/themes/saga-green/theme.css"
       />
-      <Sidebar mode={mode} toggleTheme={toggleTheme}>
+      <Sidebar mode={mode} toggleTheme={toggleThemeHandler}>
         {children}
       </Sidebar>
     </ThemeProvider>

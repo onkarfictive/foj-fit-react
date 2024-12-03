@@ -14,10 +14,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "@fontsource/poppins/600.css";
 import "./style/main.scss";
 import 'primeicons/primeicons.css';
+import store from "./redux/store";
+import { Provider } from "react-redux";
 
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <Provider store={store}>
     <App />
-  </StrictMode>,
+  </Provider>,
 )

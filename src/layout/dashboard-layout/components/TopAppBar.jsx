@@ -15,6 +15,7 @@ const AppBar = styled(MuiAppBar, {
   zIndex: theme.zIndex.drawer + 1,
   backgroundColor: mode === "dark" ? "#222222" : "#ffffff",
   color: mode === "dark" ? "#ffffff" : "#000000",
+  boxShadow: "none",
   transition: theme.transitions.create(
     ["width", "margin", "background-color"],
     {

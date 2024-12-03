@@ -7,16 +7,7 @@ $card-background: linear-gradient(180deg, #303030 0%, #242424 70%);
 }
 
 .vela-green {
-  .css-fotg20-MuiPaper-root-MuiAppBar-root {
-    background: #222222 !important;
-    border-bottom: 1px solid;
-    border-image: linear-gradient(
-        to left,
-        $main-green,
-        rgba(112, 241, 147, 0.2)
-      )
-      1;
-  }
+ 
   a{
     color: #fff !important;
     transition: .2s ease-in-out;
@@ -57,7 +48,7 @@ $card-background: linear-gradient(180deg, #303030 0%, #242424 70%);
     border-radius: 20px;
 
     .tab-menu {
-      padding: 12px;
+      padding: 12px!important;
       transition: 0.2s ease-in-out;
       &:hover {
         color: $main-green;
@@ -67,7 +58,7 @@ $card-background: linear-gradient(180deg, #303030 0%, #242424 70%);
     .active {
       background-color: $main-green;
       color: #000000;
-      padding: 12px;
+      padding: 8px 12px;
       border-radius: 20px;
 
       &:hover {
