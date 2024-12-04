@@ -13,13 +13,12 @@ import { ArrowUp } from "iconsax-react";
 import SubscriptionCard from "./components/Subscription";
 import { Calendar } from "primereact/calendar";
 import { motion, AnimatePresence } from "framer-motion";
-import GridSpinner from "../../../common/loaders/GridSpinner";
+import GridSpinner from "@/common/loaders/GridSpinner";
 
 const DashboardHome = () => {
   const [date, setDate] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
-  // Framer Motion Variants
   const containerVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -107,20 +106,26 @@ const DashboardHome = () => {
                         <h5 className="fw-500">Revenue</h5>
                         <CustomTabMenu dark="dark" />
                       </div>
-                      <div className="d-flex gap-4 mb-4">
+                      <div className="d-flex align-items-center gap-4 mb-3">
                         <div>
-                          <h5 className="mb-0">₹ 1,50,250</h5>
-                          <span className="badge bg-success">
-                            <ArrowUp size="14" />
-                            2%
-                          </span>
+                          <div className="d-flex align-items-center gap-2">
+                            <h5 className="m-0 py-1">₹ 1,50,250 </h5>
+                            <span className="fs-14 bg-green px-2 py-1 text-dark border-rounded-20">
+                              <ArrowUp size="14" />
+                              2%
+                            </span>
+                          </div>
+                          <p className="fs-12 text-grey">This month</p>
                         </div>
                         <div>
-                          <h5 className="mb-0">₹ 54</h5>
-                          <span className="badge bg-success">
-                            <ArrowUp size="14" />
-                            8%
-                          </span>
+                          <div className="d-flex align-items-center gap-2">
+                            <h5 className="m-0 py-1">54 </h5>
+                            <span className="fs-14 bg-green px-2 py-1 text-dark border-rounded-20">
+                              <ArrowUp size="14" />
+                              8%
+                            </span>
+                          </div>
+                          <p className="fs-12 text-grey">Daily Subscription</p>
                         </div>
                       </div>
                       <RevenueChart />

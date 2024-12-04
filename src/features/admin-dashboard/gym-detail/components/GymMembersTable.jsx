@@ -106,7 +106,6 @@ const GymMembersTable = () => {
   };
 
   return (
-    <div className="card">
       <DataTable
         value={users}
         rows={5}
@@ -132,7 +131,6 @@ const GymMembersTable = () => {
         <Column header="Status" body={statusBodyTemplate} />
         <Column header="Actions" body={actionsBodyTemplate} />
       </DataTable>
-    </div>
   );
 };
 

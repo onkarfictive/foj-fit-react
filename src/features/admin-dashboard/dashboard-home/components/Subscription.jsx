@@ -18,14 +18,14 @@ function SubscriptionCard() {
             className="d-flex justify-content-between align-items-center px-3 mb-3 subs-card"
             style={{height:"8.7rem"}}
           >
-            <div className="d-flex flex-column justify-content-between" style={{height:"70%"}}>
-              <h6
+            <div className="d-flex flex-column justify-content-between" style={{height:"60%"}}>
+              <h5
                 className="text-uppercase 
-                m-0"
+                m-0 text-grey"
                 style={{ letterSpacing: "1px" }}
               >
                 {plan.type}
-              </h6>
+              </h5>
               <p className="m-0">{plan.duration}</p>
             </div>
 
