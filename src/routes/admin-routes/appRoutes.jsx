@@ -2,6 +2,7 @@ import DashboardHomePage from "@/pages/admin-pages/DashboardHomePage";
 import GymManagementPage from "../../pages/admin-pages/GymManagementPage";
 import GymDetailPage from "../../pages/admin-pages/GymDetailPage";
 import { Navigate } from "react-router-dom";
+import AddGymFormPage from "../../pages/admin-pages/AddGymFormPage";
 
 
 const routes = [
@@ -25,6 +26,11 @@ const routes = [
   {
     path: "admin/gym-management/gym-detail/:id",
     element: <GymDetailPage />,
+    exact: true,
+  },
+  {
+    path: "admin/gym-management/add-new-gym",
+    element: <AddGymFormPage />,
     exact: true,
   },
 ];

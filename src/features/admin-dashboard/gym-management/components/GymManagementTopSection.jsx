@@ -4,10 +4,13 @@ import { Dropdown } from "primereact/dropdown";
 import { IconField } from "primereact/iconfield";
 import { InputIcon } from "primereact/inputicon";
 import { InputText } from "primereact/inputtext";
+import { useNavigate } from "react-router-dom";
 
 function GymManagementTopSection() {
   const [date, setDate] = useState(null);
   const [selectedCity, setSelectedCity] = useState(null);
+  const navigate = useNavigate(); 
+
   const cities = [
     { name: "New York", code: "NY" },
     { name: "Rome", code: "RM" },
@@ -15,6 +18,11 @@ function GymManagementTopSection() {
     { name: "Istanbul", code: "IST" },
     { name: "Paris", code: "PRS" },
   ];
+
+  const handleAddNewGym = () => {
+    navigate("/admin/gym-management/add-new-gym");
+  };
+
   return (
     <div className="row">
       <div className="col-md-3">
@@ -43,7 +51,9 @@ function GymManagementTopSection() {
         </IconField>
       </div>
       <div className="col-md-2">
-        <button className="btn btn-green">+&nbsp;Add&nbsp;New&nbsp;Gym</button>
+        <button className="btn btn-green" onClick={handleAddNewGym}>
+          +&nbsp;Add&nbsp;New&nbsp;Gym
+        </button>
       </div>
     </div>
   );

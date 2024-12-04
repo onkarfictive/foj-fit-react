@@ -17,6 +17,10 @@ $card-background: linear-gradient(180deg, #303030 0%, #242424 70%);
     }
   }
 
+  .MuiDivider-fullWidth{
+    background-color: #a4a4a4 !important;
+  }
+
   .main-green-badge {
     border: 1px solid $main-green;
     border-radius: 8px;
