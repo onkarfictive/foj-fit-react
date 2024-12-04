@@ -40,8 +40,8 @@ const RevenueLineChart = ({  }) => {
     "Dec",
   ];
   const currentMonth = new Date().getMonth();
-  const displayedMonths = months.slice(0, currentMonth);
-  const revenueData = [500, 400, 300, 600, 400, 450, 350, 450, 750, 350];
+  const displayedMonths = months.slice(0, currentMonth-1);
+  const revenueData = [500, 700, 500, 700, 500, 700, 500, 700, 500, 700];
   const slicedChartData = revenueData?.slice(0, currentMonth);
 
   const createGradient = (ctx) => {

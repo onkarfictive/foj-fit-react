@@ -10,7 +10,7 @@ const GymCard = ({  }) => {
     <div className="card gym-card">
       <div className="card-body">
         <div>
-          <img src={gymImage} alt="" className="img-fluid mb-2" />
+          <img src={gymImage} alt="" className="img-fluid mb-2 w-100" />
         </div>
         <div className="d-flex gap-2 align-items-center mb-3">
           <img

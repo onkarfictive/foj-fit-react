@@ -69,8 +69,8 @@ export default function VerticalBarDemo() {
   }, []);
 
   return (
-    <div style={{ width: "100%", height: "100%" }}>
-      <Chart type="bar" data={chartData} options={chartOptions} />
+    <div style={{ width: "100%", height: "400px" }}>
+      <Chart type="bar" data={chartData} options={chartOptions} className="" style={{ width: "100%", height: "400px" }} />
     </div>
   );
 }

@@ -24,10 +24,8 @@ function GymDetail() {
         <div className="row">
           <div className="col-12">
             <div className="card">
-              <div className="card-body">
-                <h5 className="mb-3">Gym Members</h5>
+                <h5 className="p-3">Gym Members</h5>
                 <GymMembersTable />
-              </div>
             </div>
           </div>
         </div>

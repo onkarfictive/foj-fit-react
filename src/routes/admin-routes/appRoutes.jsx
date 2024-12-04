@@ -1,12 +1,13 @@
 import DashboardHomePage from "@/pages/admin-pages/DashboardHomePage";
 import GymManagementPage from "../../pages/admin-pages/GymManagementPage";
 import GymDetailPage from "../../pages/admin-pages/GymDetailPage";
+import { Navigate } from "react-router-dom";
 
 
 const routes = [
   {
     path: "/",
-    element: <DashboardHomePage />,
+    element: <Navigate to={"/admin/dashboard"}/>,
     exact: true,
   },
   {
