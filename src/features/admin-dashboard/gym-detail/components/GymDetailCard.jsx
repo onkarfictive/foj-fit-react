@@ -102,30 +102,34 @@ function GymDetailCard() {
                 className="text-grey"
                 style={{ minWidth: "40%", display: "inline-block" }}
               >
-                No
+                No Of Trainer
               </span>{" "}
-              110001
+              11
             </p>
           </div>
-        </div>
-
-      
-        <div className="mt-3">
+          <div className="col-sm-6">
           <p
-            className="text-success"
+            className="text-main-green"
             style={{ cursor: "pointer" }}
             onClick={toggleModal}
           >
             More Details
           </p>
         </div>
+        </div>
+
+      
+        
 
   
         <Dialog
-          
+          header={null}
           visible={showModal}
           style={{ width: "50vw" }}
           onHide={toggleModal}
+          closable={false}
+          closeIcon={false}
+          headerClassName="d-none"
         >
           <GymDetailModal/>
         </Dialog>

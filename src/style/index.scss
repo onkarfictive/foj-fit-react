@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
 
-$main-green-dark: #60c480; // Darker green for light mode
+$main-green-dark: #1EB564; // Darker green for light mode
 $main-green-light: #70F193; // Lighter green for dark mode
+$bg-dark-green:#2E3730;
+
 
 body.saga-green { // For light mode
   --main-green: #60c480;
@@ -111,7 +113,13 @@ ol, ul{
 .text-main-green {
   color: var(--main-green) !important;
 }
-
+.text-dark-green{
+  color: $main-green-dark !important;
+}
+.bg-color{
+  background: $bg-dark-green !important;
+  padding: 3px 8px  3px 14px;
+  border-radius: 10px;}
 .fs-14{
   font-size: 14px !important;
 }
