@@ -42,7 +42,7 @@ const MenuItems = ({ open }) => {
     {
       title: "Revenue",
       icon: <Chart21 size="20" variant="Bulk" />,
-      path: "/manage-order",
+      path: "/admin/manage-revenue",
     },
     {
       title: "Subscriptions",

@@ -1,27 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap");
 
-$main-green-dark: #1EB564; // Darker green for light mode
-$main-green-light: #70F193; // Lighter green for dark mode
-$bg-dark-green:#2E3730;
+$main-green-dark: #1eb564; // Darker green for light mode
+$main-green-light: #70f193; // Lighter green for dark mode
+$bg-dark-green: #2e3730;
+$light-grey: #a4a4a4;
 
-
-body.saga-green { // For light mode
+body.saga-green {
+  // For light mode
   --main-green: #60c480;
 }
 
-body.vela-green { // For dark mode
-  --main-green: #70F193;
+body.vela-green {
+  // For dark mode
+  --main-green: #70f193;
 }
 
-.css-vw93mm-MuiDrawer-docked .MuiDrawer-paper ,.css-1ygil4i-MuiToolbar-root {
+.css-vw93mm-MuiDrawer-docked .MuiDrawer-paper,
+.css-1ygil4i-MuiToolbar-root {
   border-right: 1px solid;
-  border-image: linear-gradient(to bottom, var(--main-green), rgba(112, 241, 147, 0.2)) 1;
-} 
+  border-image: linear-gradient(
+      to bottom,
+      var(--main-green),
+      rgba(112, 241, 147, 0.2)
+    )
+    1;
+}
 
-.css-1d3kiei-MuiPaper-root-MuiAppBar-root{
+.css-1d3kiei-MuiPaper-root-MuiAppBar-root {
   z-index: 1 !important;
 }
-
 
 .css-fotg20-MuiPaper-root-MuiAppBar-root {
   background: #222222 !important;
@@ -33,8 +40,8 @@ body.vela-green { // For dark mode
     )
     1;
 }
-.css-z1e2h7-MuiPaper-root-MuiAppBar-root{
-  border-bottom: 1px solid!important;
+.css-z1e2h7-MuiPaper-root-MuiAppBar-root {
+  border-bottom: 1px solid !important;
   border-image: linear-gradient(
       to left,
       var(--main-green),
@@ -43,14 +50,15 @@ body.vela-green { // For dark mode
     1;
 }
 
-ol, ul{
-  padding: 0!important;
+ol,
+ul {
+  padding: 0 !important;
 }
 .bg-green {
   background-color: var(--main-green) !important;
 }
 
-.border-bottom-grey{
+.border-bottom-grey {
   border-bottom: 1px solid #484848 !important;
 }
 
@@ -61,7 +69,7 @@ ol, ul{
   background-color: var(--main-green) !important;
   border-color: var(--main-green) !important;
   color: #000000 !important;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
   &:hover {
     background-color: black !important;
     border-color: var(--main-green) !important;
@@ -76,9 +84,9 @@ ol, ul{
   background-color: #000000 !important;
 }
 .text-grey {
-  color: #A4A4A4 !important;
+  color: #a4a4a4 !important;
 }
-.card{
+.card {
   border-radius: 16px !important;
 }
 
@@ -104,74 +112,93 @@ ol, ul{
 .border-rounded-20 {
   border-radius: 20px !important;
 }
-.border-rounded-25{
+.border-rounded-25 {
   border-radius: 25% !important;
 }
-.border-rounded-50{
+.border-rounded-50 {
   border-radius: 50% !important;
 }
 .text-main-green {
   color: var(--main-green) !important;
 }
-.text-dark-green{
+.text-dark-green {
   color: $main-green-dark !important;
 }
-.bg-color{
+.bg-color {
   background: $bg-dark-green !important;
-  padding: 3px 8px  3px 14px;
-  border-radius: 10px;}
-.fs-14{
+  padding: 3px 8px 3px 14px;
+  border-radius: 10px;
+}
+.fs-14 {
   font-size: 14px !important;
 }
 
-.fs-12{
+.fs-12 {
   font-size: 12px !important;
 }
 
-.fs-10{
+.fs-10 {
   font-size: 10px !important;
 }
 
-
-.success-tag{
-  color: #1EB564;
-  background: #3C5643;
-  padding: 3px 8px  3px 14px;
+.success-tag {
+  color: #1eb564;
+  background: #3c5643;
+  padding: 3px 8px 3px 14px;
   border-radius: 10px;
   position: relative;
-  &::before{
+  &::before {
     content: "";
     position: absolute;
     width: 5px;
     height: 5px;
-    background-color: #1EB564;
+    background-color: #1eb564;
     left: 5px;
     border-radius: 50%;
     top: 9px;
   }
 }
 
-.danger-tag{
-  color: #FF5656;
-  background: #5B4545;
-  padding: 3px 8px  3px 14px;
+.danger-tag {
+  color: #ff5656;
+  background: #5b4545;
+  padding: 3px 8px 3px 14px;
   border-radius: 10px;
   position: relative;
-  &::before{
+  &::before {
     content: "";
     position: absolute;
     width: 5px;
     height: 5px;
-    background-color: #FF5656;
+    background-color: #ff5656;
     left: 5px;
     border-radius: 50%;
     top: 9px;
   }
 }
 
+.switch-container {
+  border-radius: 0.8rem;
+  padding: 0.2rem 1rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid $light-grey;
+  img {
+    width: 30px;
+    height: 30px;
+  }
 
-
-
-
+  label {
+    display: flex;
+    color: $light-grey;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    span {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+}
 
 

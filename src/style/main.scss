@@ -75,4 +75,36 @@ body.vela-green { // For dark mode
     }
   }
 
+  .p-unselectable-text{
+    color: var(text-grey);
+    font-size: 14px;
+    gap:5px;
+    
+    background-color: #70f19314;
+  }
+  .custom-uploader-container {
+    background-color: #1e2b3a; /* Dark navy blue */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .custom-uploader .p-fileupload {
+    background-color: #1e2b3a; /* Match the container */
+    border: 1px solid #3a4757; /* Slightly lighter border */
+    color: #ffffff; /* White text */
+  }
+  
+  .custom-uploader .p-fileupload-content {
+    background-color: #1e2b3a;
+  }
+  
+  .custom-uploader .p-fileupload-empty-message {
+    color: #ffffff; /* White placeholder text */
+  }
+  
+  .custom-placeholder {
+    color: #ffffff; /* White text for placeholder */
+    font-size: 16px;
+    text-align: center;
+  }
   

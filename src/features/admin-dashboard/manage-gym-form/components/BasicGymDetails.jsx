@@ -3,7 +3,7 @@ import { Divider, TextField } from "@mui/material";
 import { InputSwitch } from "primereact/inputswitch";
 import { useState } from "react";
 
-const GymDetailsForm = () => {
+const BasicGymDetails = () => {
     const [checked, setChecked] = useState(false);
   return (
     <div className="row mb-3">
@@ -20,6 +20,9 @@ const GymDetailsForm = () => {
         <div className="card">
           <div className="card-body">
             <div className="row">
+            <div className="col-md-12 mb-4">
+            <h5 className="mb-3">Gym Details</h5>
+            </div>
               <div className="col-6 text-grey mb-4">
                 <TextField
                   id="gymName"
@@ -187,4 +190,4 @@ const GymDetailsForm = () => {
   );
 };
 
-export default GymDetailsForm;
+export default BasicGymDetails;

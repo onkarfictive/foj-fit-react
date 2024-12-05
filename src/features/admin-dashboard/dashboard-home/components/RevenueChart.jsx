@@ -22,7 +22,7 @@ Chart.register(
   Legend
 );
 
-const RevenueLineChart = ({  }) => {
+const RevenueLineChart = ({ height = "319px" }) => {
   const chartRef = useRef(null);
 
   const months = [
@@ -40,14 +40,14 @@ const RevenueLineChart = ({  }) => {
     "Dec",
   ];
   const currentMonth = new Date().getMonth();
-  const displayedMonths = months.slice(0, currentMonth-1);
+  const displayedMonths = months.slice(0, currentMonth - 1);
   const revenueData = [500, 700, 500, 700, 500, 700, 500, 700, 500, 700];
   const slicedChartData = revenueData?.slice(0, currentMonth);
 
   const createGradient = (ctx) => {
     const gradient = ctx.createLinearGradient(0, 0, 0, 400);
-    gradient.addColorStop(0, "rgba(112, 241, 147, 0.15)"); 
-    gradient.addColorStop(1, "rgba(112, 241, 147, 0)");   
+    gradient.addColorStop(0, "rgba(112, 241, 147, 0.15)");
+    gradient.addColorStop(1, "rgba(112, 241, 147, 0)");
     return gradient;
   };
 
@@ -106,10 +106,8 @@ const RevenueLineChart = ({  }) => {
   };
 
   return (
-  
-    <div style={{ width: "100%", height: "319px" }} >
-    <Line ref={chartRef} data={data} options={options} />
-
+    <div style={{ width: "100%", height: height}}>
+      <Line ref={chartRef} data={data} options={options} />
     </div>
   );
 };

@@ -1,6 +1,14 @@
 import React from 'react'
 import Heading from '@/common/ui/Heading'
-import BasicGymDetails from '../manage-gym-form/BasicGymDetails'
+
+
+
+import UploadImages from './components/UploadGallery'
+import BasicGymDetails from './components/BasicGymDetails'
+import OwnerDetails from './components/OwnerDetails'
+import GymAmenities from './components/GymAmenities'
+import UploadGallery from './components/UploadGallery'
+
 
 function GymForm() {
   return (
@@ -12,6 +20,10 @@ function GymForm() {
         
       </div>
       <BasicGymDetails />
+      <OwnerDetails />
+
+      <GymAmenities/>
+      <UploadGallery />
     </div>
   )
 }
