@@ -52,7 +52,7 @@ const MenuItems = ({ open }) => {
     {
       title: "Users",
       icon: <UserAdd size="20" variant="Bulk" />,
-      path: "/manage-user",
+      path: "/admin/manage-users",
     },
     {
       title: "Reports",

@@ -1,204 +1,197 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap");
-
 $main-green-dark: #1eb564; // Darker green for light mode
 $main-green-light: #70f193; // Lighter green for dark mode
 $bg-dark-green: #2e3730;
 $light-grey: #a4a4a4;
-
 body.saga-green {
-  // For light mode
-  --main-green: #60c480;
+    // For light mode
+    --main-green: #60c480;
 }
 
 body.vela-green {
-  // For dark mode
-  --main-green: #70f193;
+    // For dark mode
+    --main-green: #70f193;
 }
 
 .css-vw93mm-MuiDrawer-docked .MuiDrawer-paper,
 .css-1ygil4i-MuiToolbar-root {
-  border-right: 1px solid;
-  border-image: linear-gradient(
-      to bottom,
-      var(--main-green),
-      rgba(112, 241, 147, 0.2)
-    )
-    1;
+    border-right: 1px solid;
+    border-image: linear-gradient( to bottom, var(--main-green), rgba(112, 241, 147, 0.2)) 1;
 }
 
 .css-1d3kiei-MuiPaper-root-MuiAppBar-root {
-  z-index: 1 !important;
+    z-index: 1 !important;
 }
 
 .css-fotg20-MuiPaper-root-MuiAppBar-root {
-  background: #222222 !important;
-  border-bottom: 1px solid;
-  border-image: linear-gradient(
-      to left,
-      var(--main-green),
-      rgba(112, 241, 147, 0.2)
-    )
-    1;
+    background: #222222 !important;
+    border-bottom: 1px solid;
+    border-image: linear-gradient( to left, var(--main-green), rgba(112, 241, 147, 0.2)) 1;
 }
+
 .css-z1e2h7-MuiPaper-root-MuiAppBar-root {
-  border-bottom: 1px solid !important;
-  border-image: linear-gradient(
-      to left,
-      var(--main-green),
-      rgba(112, 241, 147, 0.2)
-    )
-    1;
+    border-bottom: 1px solid !important;
+    border-image: linear-gradient( to left, var(--main-green), rgba(112, 241, 147, 0.2)) 1;
 }
 
 ol,
 ul {
-  padding: 0 !important;
+    padding: 0 !important;
 }
+
 .bg-green {
-  background-color: var(--main-green) !important;
+    background-color: var(--main-green) !important;
 }
 
 .border-bottom-grey {
-  border-bottom: 1px solid #484848 !important;
+    border-bottom: 1px solid #484848 !important;
 }
 
 .cursor-pointer {
-  cursor: pointer !important;
+    cursor: pointer !important;
 }
+
 .btn-green {
-  background-color: var(--main-green) !important;
-  border-color: var(--main-green) !important;
-  color: #000000 !important;
-  transition: 0.2s ease-in-out;
-  &:hover {
-    background-color: black !important;
+    background-color: var(--main-green) !important;
     border-color: var(--main-green) !important;
-    color: var(--main-green) !important;
-  }
+    color: #000000 !important;
+    transition: 0.2s ease-in-out;
+    &:hover {
+        background-color: black !important;
+        border-color: var(--main-green) !important;
+        color: var(--main-green) !important;
+    }
 }
 
 .bg-light-black {
-  background-color: #222222 !important;
+    background-color: #222222 !important;
 }
+
 .bg-dark-black {
-  background-color: #000000 !important;
+    background-color: #000000 !important;
 }
+
 .text-grey {
-  color: #a4a4a4 !important;
+    color: #a4a4a4 !important;
 }
+
 .card {
-  border-radius: 16px !important;
+    border-radius: 16px !important;
 }
 
 .fw-600 {
-  font-weight: 600 !important;
+    font-weight: 600 !important;
 }
 
 .fw-500 {
-  font-weight: 600 !important;
+    font-weight: 600 !important;
 }
+
 .fw-300 {
-  font-weight: 300 !important;
+    font-weight: 300 !important;
 }
 
 .border-rounded-5 {
-  border-radius: 5px !important;
+    border-radius: 5px !important;
 }
 
 .border-rounded-10 {
-  border-radius: 10px !important;
+    border-radius: 10px !important;
 }
 
 .border-rounded-20 {
-  border-radius: 20px !important;
+    border-radius: 20px !important;
 }
+
 .border-rounded-25 {
-  border-radius: 25% !important;
+    border-radius: 25% !important;
 }
+
 .border-rounded-50 {
-  border-radius: 50% !important;
+    border-radius: 50% !important;
 }
+
 .text-main-green {
-  color: var(--main-green) !important;
+    color: var(--main-green) !important;
 }
+
 .text-dark-green {
-  color: $main-green-dark !important;
+    color: $main-green-dark !important;
 }
+
 .bg-color {
-  background: $bg-dark-green !important;
-  padding: 3px 8px 3px 14px;
-  border-radius: 10px;
+    background: $bg-dark-green !important;
+    padding: 3px 8px 3px 14px;
+    border-radius: 10px;
 }
+
 .fs-14 {
-  font-size: 14px !important;
+    font-size: 14px !important;
 }
 
 .fs-12 {
-  font-size: 12px !important;
+    font-size: 12px !important;
 }
 
 .fs-10 {
-  font-size: 10px !important;
+    font-size: 10px !important;
 }
 
 .success-tag {
-  color: #1eb564;
-  background: #3c5643;
-  padding: 3px 8px 3px 14px;
-  border-radius: 10px;
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background-color: #1eb564;
-    left: 5px;
-    border-radius: 50%;
-    top: 9px;
-  }
+    color: #1eb564;
+    background: #3c5643;
+    padding: 3px 8px 3px 14px;
+    border-radius: 10px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: #1eb564;
+        left: 5px;
+        border-radius: 50%;
+        top: 9px;
+    }
 }
 
 .danger-tag {
-  color: #ff5656;
-  background: #5b4545;
-  padding: 3px 8px 3px 14px;
-  border-radius: 10px;
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background-color: #ff5656;
-    left: 5px;
-    border-radius: 50%;
-    top: 9px;
-  }
+    color: #ff5656;
+    background: #5b4545;
+    padding: 3px 8px 3px 14px;
+    border-radius: 10px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: #ff5656;
+        left: 5px;
+        border-radius: 50%;
+        top: 9px;
+    }
 }
 
 .switch-container {
-  border-radius: 0.8rem;
-  padding: 0.2rem 1rem;
-  display: flex;
-  align-items: center;
-  border: 1px solid $light-grey;
-  img {
-    width: 30px;
-    height: 30px;
-  }
-
-  label {
+    border-radius: 0.8rem;
+    padding: 0.2rem 1rem;
     display: flex;
-    color: $light-grey;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    span {
-      font-size: 1rem;
-      font-weight: 500;
+    border: 1px solid $light-grey;
+    img {
+        width: 30px;
+        height: 30px;
     }
-  }
+    label {
+        display: flex;
+        color: $light-grey;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        span {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
 }
-
-
