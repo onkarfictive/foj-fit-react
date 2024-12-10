@@ -23,7 +23,7 @@ const GymDetailModal = () => {
         lectus augue senectus sed. Sed commodo orci praesent duis convallis diam
         egestas pretium. Lorem ipsum dolor sit amet consectetur.
       </p>
-      <SelectButton className="p-2"
+      <SelectButton className="p-2 tab-swtich-button"
         value={value}
         onChange={(e) => setValue(e.value)}
         options={options}

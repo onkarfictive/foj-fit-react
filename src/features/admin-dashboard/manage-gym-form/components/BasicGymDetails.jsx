@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Divider, TextField } from "@mui/material";
 import { InputSwitch } from "primereact/inputswitch";
-import { useState } from "react";
 
 const BasicGymDetails = () => {
-    const [checked, setChecked] = useState(false);
+  const [gymApproved, setGymApproved] = useState(false);
+  const [priceNegotiable, setPriceNegotiable] = useState(false);
+  const [boundaryWalls, setBoundaryWalls] = useState(false);
+
   return (
     <div className="row mb-3">
       <div className="col-md-4">
@@ -20,9 +22,9 @@ const BasicGymDetails = () => {
         <div className="card">
           <div className="card-body">
             <div className="row">
-            <div className="col-md-12 mb-4">
-            <h5 className="mb-3">Gym Details</h5>
-            </div>
+              <div className="col-md-12 mb-4">
+                <h5 className="mb-3">Gym Details</h5>
+              </div>
               <div className="col-6 text-grey mb-4">
                 <TextField
                   id="gymName"
@@ -107,8 +109,10 @@ const BasicGymDetails = () => {
                 />
               </div>
               <div className="col-12 text-grey mb-2">
-                <h5 className=" fs-12" style={{ color: "text-grey" }}>Location Details</h5>
-                </div>
+                <h5 className="fs-12" style={{ color: "text-grey" }}>
+                  Location Details
+                </h5>
+              </div>
               <div className="col-6 text-grey mb-3">
                 <TextField
                   id="state"
@@ -116,8 +120,6 @@ const BasicGymDetails = () => {
                   label="State"
                   variant="outlined"
                   fullWidth
-                  multiline
-                  
                 />
               </div>
               <div className="col-6 text-grey mb-3">
@@ -127,8 +129,6 @@ const BasicGymDetails = () => {
                   label="City"
                   variant="outlined"
                   fullWidth
-                  multiline
-                  
                 />
               </div>
               <div className="col-12 text-grey mb-3">
@@ -138,12 +138,10 @@ const BasicGymDetails = () => {
                   label="Full Address"
                   variant="outlined"
                   fullWidth
-                  multiline
-                  
                 />
               </div>
 
-              <Divider className="my-4"/>
+              <Divider className="my-4" />
 
               <div className="col-6 text-grey mb-3">
                 <TextField
@@ -152,35 +150,51 @@ const BasicGymDetails = () => {
                   label="Gym is LOREM Approved"
                   variant="outlined"
                   fullWidth
-                  multiline
-                  
+                  InputProps={{
+                    endAdornment: (
+                      <InputSwitch
+                        checked={gymApproved}
+                        onChange={(e) => setGymApproved(e.value)}
+                      />
+                    ),
+                  }}
                 />
               </div>
+
               <div className="col-6 text-grey mb-3">
                 <TextField
                   id="priceNegotiable"
-                  name="address"
+                  name="priceNegotiable"
                   label="Price is Negotiable"
                   variant="outlined"
                   fullWidth
-                  multiline
-                  
+                  InputProps={{
+                    endAdornment: (
+                      <InputSwitch
+                        checked={priceNegotiable}
+                        onChange={(e) => setPriceNegotiable(e.value)}
+                      />
+                    ),
+                  }}
                 />
               </div>
-              <div className="col-6 text-grey mb-3 ">
+
+              <div className="col-6 text-grey mb-3">
                 <TextField
                   id="boundaryWalls"
                   name="boundaryWalls"
                   label="Property has Boundary Walls"
                   variant="outlined"
-                  
                   fullWidth
-                  multiline
-                  
+                  InputProps={{
+                    endAdornment: (
+                      <InputSwitch
+                        checked={boundaryWalls}
+                        onChange={(e) => setBoundaryWalls(e.value)}
+                      />
+                    ),
+                  }}
                 />
-                <div>
-                <InputSwitch checked={checked} onChange={(e) => setChecked(e.value)} />
-                </div>
               </div>
             </div>
           </div>

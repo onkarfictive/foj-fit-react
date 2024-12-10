@@ -108,7 +108,7 @@ const GymRevenueTable = () => {
           }}
         />
         <div>
-          <span className="fw-bold text-white" style={{ fontSize: "1rem" }}>
+          <span className="fw-bold " style={{ fontSize: "1rem" }}>
             {rowData.name}
           </span>
           <br />

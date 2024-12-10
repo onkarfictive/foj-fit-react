@@ -5,6 +5,7 @@ import { Navigate } from "react-router-dom";
 import AddGymFormPage from "../../pages/admin-pages/AddGymFormPage";
 import ManageRevenue from "../../pages/admin-pages/ManageRevenue";
 import ManageUsers from "../../pages/admin-pages/ManageUsers";
+import ManageSubscriptions from "../../pages/admin-pages/ManageSubscriptions";
 
 
 const routes = [
@@ -44,6 +45,12 @@ const routes = [
   {
     path: "admin/manage-users",
     element: <ManageUsers />,
+    exact: true,
+  },
+
+  {
+    path: "admin/manage-subscriptions",
+    element: <ManageSubscriptions />,
     exact: true,
   },
 

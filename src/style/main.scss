@@ -107,4 +107,49 @@ body.vela-green { // For dark mode
     font-size: 16px;
     text-align: center;
   }
-  
+
+  .swtich-container{
+    border-radius: .5rem;
+    border: 1px solid #637381;
+    background-color: rgb(255, 255, 255);   
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    img{
+        width: 2.5rem;
+    }
+    label{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        span{
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+    }
+}
+ 
+.bg-border-light-green {
+  border: 1px solid #00a76f;
+  background-color: rgba(0, 167, 111, 0.08);
+  color: #004b50;
+}
+ 
+
+.tab-swtich-button{
+  background-color: #484848; 
+  display: inline-flex;
+  width: fit-content;
+  border-radius: 1.2rem !important;
+  overflow: hidden;
+  padding: 0 !important;
+  .p-button.p-component{
+    transition:all .2s ease-in-out;
+    background-color: transparent !important;
+    border-radius: 1.2rem !important;
+    &.p-focus{
+      background-color: #00a76f !important; 
+    }
+  }
+}

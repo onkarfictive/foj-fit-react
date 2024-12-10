@@ -3,6 +3,8 @@ $main-green-dark: #1eb564; // Darker green for light mode
 $main-green-light: #70f193; // Lighter green for dark mode
 $bg-dark-green: #2e3730;
 $light-grey: #a4a4a4;
+$lighter-grey: #666666;
+
 body.saga-green {
     // For light mode
     --main-green: #60c480;
@@ -118,7 +120,9 @@ ul {
 .text-dark-green {
     color: $main-green-dark !important;
 }
-
+.text-lighter-grey{
+    color:$lighter-grey
+}
 .bg-color {
     background: $bg-dark-green !important;
     padding: 3px 8px 3px 14px;

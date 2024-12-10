@@ -8,6 +8,7 @@ import BasicGymDetails from './components/BasicGymDetails'
 import OwnerDetails from './components/OwnerDetails'
 import GymAmenities from './components/GymAmenities'
 import UploadGallery from './components/UploadGallery'
+import DaysAvailability from './components/DaysAvailability'
 
 
 function GymForm() {
@@ -21,6 +22,7 @@ function GymForm() {
       </div>
       <BasicGymDetails />
       <OwnerDetails />
+      <DaysAvailability/>
 
       <GymAmenities/>
       <UploadGallery />

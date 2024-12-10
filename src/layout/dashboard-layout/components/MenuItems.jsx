@@ -47,7 +47,7 @@ const MenuItems = ({ open }) => {
     {
       title: "Subscriptions",
       icon: <Bank size="20" variant="Bulk" />,
-      path: "/manage-customers",
+      path: "/admin/manage-subscriptions",
     },
     {
       title: "Users",
