@@ -144,57 +144,48 @@ const BasicGymDetails = () => {
               <Divider className="my-4" />
 
               <div className="col-6 text-grey mb-3">
-                <TextField
-                  id="gymapproved"
-                  name="gymapproved"
-                  label="Gym is LOREM Approved"
-                  variant="outlined"
-                  fullWidth
-                  InputProps={{
-                    endAdornment: (
-                      <InputSwitch
-                        checked={gymApproved}
-                        onChange={(e) => setGymApproved(e.value)}
-                      />
-                    ),
-                  }}
-                />
+                <div
+                  className={`d-flex w-100 justify-content-between align-items-center custom-checkbox cursor-pointer ${
+                    boundaryWalls ? "active" : ""
+                  }`}
+                  onClick={() => setBoundaryWalls(!boundaryWalls)}
+                >
+                  <p className="m-0">Monday</p>
+                  <InputSwitch
+                    checked={boundaryWalls}
+                    onChange={(e) => setBoundaryWalls(e.value)}
+                  />
+                </div>
               </div>
 
               <div className="col-6 text-grey mb-3">
-                <TextField
-                  id="priceNegotiable"
-                  name="priceNegotiable"
-                  label="Price is Negotiable"
-                  variant="outlined"
-                  fullWidth
-                  InputProps={{
-                    endAdornment: (
-                      <InputSwitch
-                        checked={priceNegotiable}
-                        onChange={(e) => setPriceNegotiable(e.value)}
-                      />
-                    ),
-                  }}
-                />
+                <div
+                  className={`d-flex w-100 justify-content-between align-items-center custom-checkbox cursor-pointer ${
+                    boundaryWalls ? "active" : ""
+                  }`}
+                  onClick={() => setBoundaryWalls(!boundaryWalls)}
+                >
+                  <p className="m-0">Monday</p>
+                  <InputSwitch
+                    checked={boundaryWalls}
+                    onChange={(e) => setBoundaryWalls(e.value)}
+                  />
+                </div>
               </div>
 
               <div className="col-6 text-grey mb-3">
-                <TextField
-                  id="boundaryWalls"
-                  name="boundaryWalls"
-                  label="Property has Boundary Walls"
-                  variant="outlined"
-                  fullWidth
-                  InputProps={{
-                    endAdornment: (
-                      <InputSwitch
-                        checked={boundaryWalls}
-                        onChange={(e) => setBoundaryWalls(e.value)}
-                      />
-                    ),
-                  }}
-                />
+                <div
+                  className={`d-flex w-100 justify-content-between align-items-center custom-checkbox cursor-pointer ${
+                    boundaryWalls ? "active" : ""
+                  }`}
+                  onClick={() => setBoundaryWalls(!boundaryWalls)}
+                >
+                  <p className="m-0">Monday</p>
+                  <InputSwitch
+                    checked={boundaryWalls}
+                    onChange={(e) => setBoundaryWalls(e.value)}
+                  />
+                </div>
               </div>
             </div>
           </div>

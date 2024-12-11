@@ -13,7 +13,6 @@ function GymDetailCard() {
   return (
     <div className="card">
       <div className="card-body">
-        {/* Header Section */}
         <div className="d-flex align-items-center justify-content-between mb-3">
           <div className="d-flex align-items-center gap-3">
             <img
@@ -28,7 +27,6 @@ function GymDetailCard() {
           <p className="main-green-badge fs-14 m-0">ID : 12345</p>
         </div>
 
-        {/* Gym Info */}
         <div className="row">
           <div className="col-sm-6">
             <p>
@@ -108,20 +106,16 @@ function GymDetailCard() {
             </p>
           </div>
           <div className="col-sm-6">
-          <p
-            className="text-main-green"
-            style={{ cursor: "pointer" }}
-            onClick={toggleModal}
-          >
-            More Details
-          </p>
-        </div>
+            <p
+              className="text-main-green"
+              style={{ cursor: "pointer" }}
+              onClick={toggleModal}
+            >
+              More Details
+            </p>
+          </div>
         </div>
 
-      
-        
-
-  
         <Dialog
           header={null}
           visible={showModal}
@@ -131,13 +125,11 @@ function GymDetailCard() {
           closeIcon={false}
           headerClassName="d-none"
         >
-          <GymDetailModal/>
+          <GymDetailModal />
         </Dialog>
       </div>
     </div>
   );
 }
-
-
 
 export default GymDetailCard;

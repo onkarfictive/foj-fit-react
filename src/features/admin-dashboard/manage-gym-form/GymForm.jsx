@@ -13,7 +13,7 @@ import DaysAvailability from './components/DaysAvailability'
 
 function GymForm() {
   return (
-    <div>
+    <div className='admin-new-gym'>
         <div className="row mb-4">
         <div className="col-md-3">
           <Heading title="Add New Gym" />

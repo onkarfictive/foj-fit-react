@@ -6,6 +6,9 @@ import AddGymFormPage from "../../pages/admin-pages/AddGymFormPage";
 import ManageRevenue from "../../pages/admin-pages/ManageRevenue";
 import ManageUsers from "../../pages/admin-pages/ManageUsers";
 import ManageSubscriptions from "../../pages/admin-pages/ManageSubscriptions";
+import AddNewSubscription from "../../features/admin-dashboard/manage-subscription/components/AddNewSubscription";
+import { Subscript } from "@mui/icons-material";
+import SubscriptionAddNewPlan from "../../pages/admin-pages/SubscriptionAddNewPlan";
 
 
 const routes = [
@@ -51,6 +54,11 @@ const routes = [
   {
     path: "admin/manage-subscriptions",
     element: <ManageSubscriptions />,
+    exact: true,
+  },
+  {
+    path: "admin/manage-subscriptions/add-new-plan",
+    element: <SubscriptionAddNewPlan />,
     exact: true,
   },
 

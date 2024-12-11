@@ -4,7 +4,7 @@ import { InputSwitch } from "primereact/inputswitch";
 import { useState } from "react";
 
 const DaysAvailability = () => {
-    const [checked, setChecked] = useState(false);
+  const [boundaryWalls, setBoundaryWalls] = useState(false);
   return (
     <div className="row mb-3">
       <div className="col-md-4">
@@ -21,162 +21,94 @@ const DaysAvailability = () => {
           <div className="card-body">
             <div className="row">
               <div className="col-4 text-grey mb-4">
-                <TextField
-                  id="monday"
-                  name="monday"
-                  label="Monday"
-                  variant="outlined"
-                  fullWidth
-                />
-              </div>
-              <div className="col-4 mb-3">
-                <TextField
-                  id="tuesday"
-                  name="tuesday"
-                  label="Tuesday"
-                  variant="outlined"
-                  fullWidth
-                />
+                <div
+                  className={`d-flex w-100 justify-content-between align-items-center custom-checkbox cursor-pointer ${
+                    boundaryWalls ? "active" : ""}`}
+                  onClick={() => setBoundaryWalls(!boundaryWalls)}
+                >
+                  <p className="m-0">Monday</p>
+                  <InputSwitch
+                    checked={boundaryWalls}
+                    onChange={(e) => setBoundaryWalls(e.value)}
+                  />
+                </div>
               </div>
               <div className="col-4 text-grey mb-4">
-                <TextField
-                  id="wednesday"
-                  name="wednesday"
-                  label="Wednesday"
-                  variant="outlined"
-                  fullWidth
-                />
-              </div>
-              <div className="col-4 mb-3">
-                <TextField
-                  id="thursday"
-                  name="thursday"
-                  label="Thursday"
-                  variant="outlined"
-                  fullWidth
-                />
-              </div>
-              <div className="col-6 text-grey mb-3">
-                <TextField
-                  id="noOfTrainers"
-                  name="noOfTrainers"
-                  label="No. of Trainers"
-                  variant="outlined"
-                  fullWidth
-                />
-              </div>
-              <div className="col-6 mb-3">
-                <TextField
-                  id="subscription"
-                  name="subscription"
-                  label="Subscription"
-                  variant="outlined"
-                  fullWidth
-                />
-              </div>
-              <div className="col-6 text-grey mb-3">
-                <TextField
-                  id="startDate"
-                  name="startDate"
-                  label="Start Date"
-                  variant="outlined"
-                  fullWidth
-                />
-              </div>
-              <div className="col-6 mb-3">
-                <TextField
-                  id="status"
-                  name="status"
-                  label="Status"
-                  variant="outlined"
-                  fullWidth
-                />
-              </div>
-              <div className="col-12 text-grey mb-3">
-                <TextField
-                  id="gymDescription"
-                  name="gymDescription"
-                  label="Gym Description"
-                  variant="outlined"
-                  fullWidth
-                  multiline
-                  rows={4}
-                />
-              </div>
-              <div className="col-12 text-grey mb-2">
-                <h5 className=" fs-12" style={{ color: "text-grey" }}>Location Details</h5>
+                <div
+                  className={`d-flex w-100 justify-content-between align-items-center custom-checkbox cursor-pointer ${
+                    boundaryWalls ? "active" : ""}`}
+                  onClick={() => setBoundaryWalls(!boundaryWalls)}
+                >
+                  <p className="m-0">Monday</p>
+                  <InputSwitch
+                    checked={boundaryWalls}
+                    onChange={(e) => setBoundaryWalls(e.value)}
+                  />
                 </div>
-              <div className="col-6 text-grey mb-3">
-                <TextField
-                  id="state"
-                  name="state"
-                  label="State"
-                  variant="outlined"
-                  fullWidth
-                  multiline
-                  
-                />
               </div>
-              <div className="col-6 text-grey mb-3">
-                <TextField
-                  id="city"
-                  name="city"
-                  label="City"
-                  variant="outlined"
-                  fullWidth
-                  multiline
-                  
-                />
+              <div className="col-4 text-grey mb-4">
+                <div
+                  className={`d-flex w-100 justify-content-between align-items-center custom-checkbox cursor-pointer ${
+                    boundaryWalls ? "active" : ""}`}
+                  onClick={() => setBoundaryWalls(!boundaryWalls)}
+                >
+                  <p className="m-0">Monday</p>
+                  <InputSwitch
+                    checked={boundaryWalls}
+                    onChange={(e) => setBoundaryWalls(e.value)}
+                  />
+                </div>
               </div>
-              <div className="col-12 text-grey mb-3">
-                <TextField
-                  id="address"
-                  name="address"
-                  label="Full Address"
-                  variant="outlined"
-                  fullWidth
-                  multiline
-                  
-                />
+              <div className="col-4 text-grey mb-4">
+                <div
+                  className={`d-flex w-100 justify-content-between align-items-center custom-checkbox cursor-pointer ${
+                    boundaryWalls ? "active" : ""}`}
+                  onClick={() => setBoundaryWalls(!boundaryWalls)}
+                >
+                  <p className="m-0">Monday</p>
+                  <InputSwitch
+                    checked={boundaryWalls}
+                    onChange={(e) => setBoundaryWalls(e.value)}
+                  />
+                </div>
               </div>
-
-              <Divider className="my-4"/>
-
-              <div className="col-6 text-grey mb-3">
-                <TextField
-                  id="gymapproved"
-                  name="gymapproved"
-                  label="Gym is LOREM Approved"
-                  variant="outlined"
-                  fullWidth
-                  multiline
-                  
-                />
+              <div className="col-4 text-grey mb-4">
+                <div
+                  className={`d-flex w-100 justify-content-between align-items-center custom-checkbox cursor-pointer ${
+                    boundaryWalls ? "active" : ""}`}
+                  onClick={() => setBoundaryWalls(!boundaryWalls)}
+                >
+                  <p className="m-0">Monday</p>
+                  <InputSwitch
+                    checked={boundaryWalls}
+                    onChange={(e) => setBoundaryWalls(e.value)}
+                  />
+                </div>
               </div>
-              <div className="col-6 text-grey mb-3">
-                <TextField
-                  id="priceNegotiable"
-                  name="address"
-                  label="Price is Negotiable"
-                  variant="outlined"
-                  fullWidth
-                  multiline
-                  
-                />
+              <div className="col-4 text-grey mb-4">
+                <div
+                  className={`d-flex w-100 justify-content-between align-items-center custom-checkbox cursor-pointer ${
+                    boundaryWalls ? "active" : ""}`}
+                  onClick={() => setBoundaryWalls(!boundaryWalls)}
+                >
+                  <p className="m-0">Monday</p>
+                  <InputSwitch
+                    checked={boundaryWalls}
+                    onChange={(e) => setBoundaryWalls(e.value)}
+                  />
+                </div>
               </div>
-              <div className="col-6 text-grey mb-3 ">
-                <TextField
-                  id="boundaryWalls"
-                  name="boundaryWalls"
-                  label="Property has Boundary Walls"
-                  variant="outlined"
-                  
-                  fullWidth
-                  multiline
-                  
-                />
-                <div>
-                <InputSwitch checked={checked} onChange={(e) => setChecked(e.value)} />
+              <div className="col-4 text-grey mb-4">
+                <div
+                  className={`d-flex w-100 justify-content-between align-items-center custom-checkbox cursor-pointer ${
+                    boundaryWalls ? "active" : ""}`}
+                  onClick={() => setBoundaryWalls(!boundaryWalls)}
+                >
+                  <p className="m-0">Monday</p>
+                  <InputSwitch
+                    checked={boundaryWalls}
+                    onChange={(e) => setBoundaryWalls(e.value)}
+                  />
                 </div>
               </div>
             </div>

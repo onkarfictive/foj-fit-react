@@ -4,6 +4,8 @@ $main-green-light: #70f193; // Lighter green for dark mode
 $bg-dark-green: #2e3730;
 $light-grey: #a4a4a4;
 $lighter-grey: #666666;
+$dark-grey:#484848;
+
 
 body.saga-green {
     // For light mode
@@ -14,6 +16,9 @@ body.vela-green {
     // For dark mode
     --main-green: #70f193;
 }
+
+
+
 
 .css-vw93mm-MuiDrawer-docked .MuiDrawer-paper,
 .css-1ygil4i-MuiToolbar-root {
@@ -62,6 +67,18 @@ ul {
         background-color: black !important;
         border-color: var(--main-green) !important;
         color: var(--main-green) !important;
+    }
+}
+
+.btn-grey {
+    background-color: var($dark-grey) !important;
+    border-color: var($dark-grey) !important;
+    color: #000000 !important;
+    transition: 0.2s ease-in-out;
+    &:hover {
+        background-color: black !important;
+        border-color: var($dark-grey) !important;
+        color: var($dark-grey) !important;
     }
 }
 
