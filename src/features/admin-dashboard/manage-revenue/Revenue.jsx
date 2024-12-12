@@ -146,6 +146,7 @@ function Revenue() {
                     options={cities}
                     optionLabel="name"
                     placeholder="Subscription"
+                    className="w-100"
                   />
                 </div>
                 <div className="col-md-6">

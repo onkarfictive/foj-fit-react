@@ -1,17 +1,18 @@
-
 $main-green-dark: #60c480; // Darker green for light mode
-$main-green-light: #70F193; // Lighter green for dark mode
+$main-green-light: #70f193; // Lighter green for dark mode
 $bg-dark-green: #2e3730;
 $light-grey: #a4a4a4;
 $lighter-grey: #666666;
-$dark-grey:#484848;
+$dark-grey: #484848;
 
-body.saga-green { // For light mode
+body.saga-green {
+  // For light mode
   --main-green: #60c480;
 }
 
-body.vela-green { // For dark mode
-  --main-green: #70F193;
+body.vela-green {
+  // For dark mode
+  --main-green: #70f193;
 }
 
 ////// DASHBOARD STYLES Start //////
@@ -53,37 +54,49 @@ body.vela-green { // For dark mode
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
   }
-  .subs-card{
+  .subs-card {
     border: 1px solid var(--main-green);
     border-radius: 20px;
     border-bottom: none;
   }
 }
 
+
+
 ////// DASHBOARD STYLES End ////
 
-  //////GYM MANAGEMENT START//////
-  
-  .admin-gym-management{
-    .gym-card{
-      .expiry-badge{
-         p{
-            color : var(--main-green);
-            padding:  6px 0;
-            border: 1px dotted var(--main-green);
-            border-radius: 8px;
-            font-size: 14px;
-            background-color: #70f19314;
-         }
+//////GYM MANAGEMENT START//////
+
+.admin-gym-management {
+  .gym-card {
+    .expiry-badge {
+      p {
+        color: var(--main-green);
+        padding: 6px 0;
+        border: 1px dotted var(--main-green);
+        border-radius: 8px;
+        font-size: 14px;
+        background-color: #70f19314;
       }
     }
   }
+}
 
-  .p-unselectable-text{
+
+.p-component{
+
+  background-color: #484848 !important;
+}
+//////GYM MANAGEMENT END//////
+
+
+/////// ADD GYM FORM START ////
+
+.add-new-gym{
+  .p-unselectable-text {
     color: var(text-grey);
     font-size: 14px;
-    gap:5px;
-    
+    gap: 5px;
     background-color: #70f19314;
   }
   .custom-uploader-container {
@@ -111,68 +124,123 @@ body.vela-green { // For dark mode
     font-size: 16px;
     text-align: center;
   }
-
-  .swtich-container{
-    border-radius: .5rem;
+  
+  .swtich-container {
+    border-radius: 0.5rem;
     border: 1px solid #637381;
-    background-color: rgb(255, 255, 255);   
-    padding: .5rem 1rem;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
     display: flex;
     align-items: center;
-    img{
-        width: 2.5rem;
+    img {
+      width: 2.5rem;
     }
-    label{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        span{
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
-    }
-}
- 
-.bg-border-light-green {
-  border: 1px solid #00a76f;
-  background-color: rgba(0, 167, 111, 0.08);
-  color: #004b50;
-}
- 
-
-.tab-swtich-button{
-  background-color: #484848; 
-  display: inline-flex;
-  width: fit-content;
-  border-radius: 1.2rem !important;
-  overflow: hidden;
-  padding: 0 !important;
-  .p-button.p-component{
-    transition:all .2s ease-in-out;
-    background-color: transparent !important;
-    border-radius: 1.2rem !important;
-    &.p-focus{
-      background-color: #00a76f !important; 
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      span {
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
     }
   }
-}
-
-
-
-///// ADD GYM FORM START ////`
-  .custom-checkbox{
+  
+  .bg-border-light-green {
+    border: 1px solid #00a76f;
+    background-color: rgba(0, 167, 111, 0.08);
+    color: #004b50;
+  }
+  
+  .tab-switch-button.p-selectbutton {
+    background-color: #484848;
+    display: inline-flex;
+    width: fit-content;
+    border-radius: 2rem !important;
+    overflow: hidden;
+    padding: 0 !important;
+    transition: unset !important;
+    .p-button.p-component {
+      background-color: transparent !important;
+      border-radius: 2rem !important;
+      border-color: transparent !important;
+      padding: 1rem 2rem;
+      transition: unset !important;
+    }
+    .p-button.p-component.p-highlight {
+      background-color: #00a76f !important;
+      transition: unset !important;
+    }
+  }
+  
+  ///// ADD GYM FORM START ////`
+  .custom-checkbox {
     display: flex;
     padding: 12px 8px;
     border: 1px solid rgb(151, 150, 150);
     border-radius: 8px;
   }
-  .custom-checkbox.active{
-    background-color: $bg-dark-green!important;
-    border-color: var(--main-green)!important;
-    color: var(--main-green)!important;
-
+  .custom-checkbox.active {
+    background-color: $bg-dark-green !important;
+    border-color: var(--main-green) !important;
+    color: var(--main-green) !important;
   }
+  
+  .p-dropdown {
+    border-radius: 6px !important;
+    border-color: #a4a4a4 !important;
+  }
+  
+  .p-inputtext{
+    border-radius: 6px !important;
+    border-color: #a4a4a4 !important;
+  }
+  
+  .p-fileupload-content{
+    color : #272727 !important;
+    padding: 0% !important;
+    background-color:#272727 !important;
+    border-color: #484848 !important;
+  }
+  
+  .pi-image {
+    color: #a4a4a4 !important;
+    background-color: #484848  !important;  
+  } 
+  
+  .data-p-highlight {
+    background-color: #484848 !important;
+  }
+  .p-fileupload-buttonbar{
+    background-color: #272727 !important;
+    border-color: #484848;
+  }
+  .pr_id_1_navcontent{
+    background-color: #272727 !important;
+    padding : 0 !important;
+    
+  }
+  .p-tabview-nav-link{
+    background-color: #303030 !important;
+    margin: 0!important;
+  }
+  
+}
+
+
+
+
+
+
+/////////////user management start////////////
+
+
+.p-dropdown {
+  border-color: #484848!important;
+}
+
+
 
 
 

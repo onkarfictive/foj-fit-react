@@ -158,6 +158,10 @@ ul {
     font-size: 10px !important;
 }
 
+ol , ul{
+    margin: 0 !important;
+}
+
 .success-tag {
     color: #1eb564;
     background: #3c5643;
@@ -216,3 +220,44 @@ ul {
         }
     }
 }
+.p-tabview-panels{
+    padding: 0 !important;
+}
+
+.p-datepicker-group{
+
+    background-color: #272727 !important;
+    border-color: #272727 !important;
+  
+  }
+  .p-datepicker{
+  
+    background-color: #272727 !important;
+    border-color: #272727 !important;
+  }
+  .p-datepicker-header{
+  
+    background-color: #272727 !important;
+    border-color: #272727 !important;
+  }
+
+  .p-dropdown-panel{
+
+    background-color: #272727 !important;
+    border-color: #272727 !important;
+  }
+
+ .p-paginator {
+
+    background-color: #272727 !important;
+    border-color: #272727 !important;
+    border: hidden;
+ }
+
+ .p-component{
+    border-color: #484848 !important;
+ }
+
+ .p-dropdown{
+    border-color: #484848 !important;
+ }

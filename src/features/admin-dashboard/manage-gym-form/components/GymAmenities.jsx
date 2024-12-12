@@ -46,7 +46,7 @@ function GymAmenities() {
 
   ];
   return (
-    <div className="row">
+    <div className="row mb-3">
       <div className="col-md-4 ">
         <div>
           <h5 className="text-white fs-16 fw-600">Choose Gym Amenities</h5>

@@ -18,9 +18,11 @@ function UploadGallery() {
       <div className="col-md-8">
         <div className="card">
           <TabView>
+          
             <TabPanel header="Feature">
               <SelectFileUpload />
             </TabPanel>
+        
             <TabPanel header="Gallery">
             <SelectFileUpload />
             </TabPanel>
